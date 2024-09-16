@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    padding: 20px;
+    text-align: justify;
+}
+
+/* Grid layout */
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.row {
+    display: contents;
+}
+
+[class^="col-"] {
+    background-color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+}
+
+.col-6 {
+    grid-column: span 6;
+}
+
+.col-4 {
+    grid-column: span 4;
+}
+
+.col-3 {
+    grid-column: span 3;
+}
+
+.col-8 {
+    grid-column: span 8;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.col-10 {
+    grid-column: span 10;
+}
+
+.col-5 {
+    grid-column: span 5;
+}
+
+.col-7 {
+    grid-column: span 7;
+}
+
+/* Media Queries */
+
+/* Phones, 600px and down */
+@media (max-width: 600px) {
+    body {
+        background-color: #f0f8ff;
+    }
+    p {
+        font-size: 12px;
+        background-color: #ffe4e1;
+    }
+}
+
+/* Portrait tablets and large phones, 600px and up */
+@media (min-width: 600px) {
+    body {
+        background-color: #fafad2;
+    }
+    p {
+        font-size: 14px;
+        background-color: #f0e68c;
+    }
+}
+
+/* Landscape tablets, 768px and up */
+@media (min-width: 768px) {
+    body {
+        background-color: #f5deb3;
+    }
+    p {
+        font-size: 16px;
+        background-color: #98fb98;
+    }
+}
+
+/* Laptops/desktops, 992px and up */
+@media (min-width: 992px) {
+    body {
+        background-color: #b0e0e6;
+    }
+    p {
+        font-size: 18px;
+        background-color: #add8e6;
+    }
+}
+
+/* Large laptops and desktops, 1200px and up */
+@media (min-width: 1200px) {
+    body {
+        background-color: #dda0dd;
+    }
+    p {
+        font-size: 20px;
+        background-color: #d8bfd8;
+    }
+}
